@@ -60,8 +60,9 @@ function login() {
 
       userObj=JSON.parse(localStorage.getItem(email))
       if(userObj.passwd==passwd){
-        alert("login success")
+       
         window.location="main.html"
+           alert("login success")
       }
       else{
         alert("wrong passwd")
